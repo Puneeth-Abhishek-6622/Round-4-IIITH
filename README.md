@@ -14,10 +14,10 @@ We use the **Indian Emotional Speech Corpora (IESC)** dataset, which consists of
 📥 **Dataset Source:** [IESC on Kaggle](https://www.kaggle.com/datasets/ybsingh/indian-emotional-speech-corpora-iesc/data)  
 
 ## 🚀 Features Extracted  
-- **MFCC (Mel-Frequency Cepstral Coefficients)**: Extracts 40 MFCC features per audio sample.  
-- **Mel Spectrograms: A time-frequency representation of the audio signals. We extracted 128 mel spectrogram features per audio file to capture energy distribution over different frequency bands.
-- **ZCR (Zero Crossing Rate): Measures the rate at which the signal changes its sign, useful for detecting voiced versus unvoiced segments.
-- **RMSE (Root Mean Square Energy): Represents the overall energy of the audio signal, helping in emotion detection by analyzing loudness variations
+- MFCC (Mel-Frequency Cepstral Coefficients)**: Extracts 40 MFCC features per audio sample.  
+- Mel Spectrograms: A time-frequency representation of the audio signals. We extracted 128 mel spectrogram features per audio file to capture energy distribution over different frequency bands.
+- ZCR (Zero Crossing Rate): Measures the rate at which the signal changes its sign, useful for detecting voiced versus unvoiced segments.
+- RMSE (Root Mean Square Energy): Represents the overall energy of the audio signal, helping in emotion detection by analyzing loudness variations
 
 
 
