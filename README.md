@@ -21,10 +21,4 @@ We use the **Indian Emotional Speech Corpora (IESC)** dataset, which consists of
 
 
 
-📊 The best-performing model was **CNN (81%)**, followed by **XGBoost (79%)**.  
-
-## 📌 How to Run  
-1. **Clone the repository:**  
-   ```bash
-   git clone https://github.com/yourusername/speech-emotion-recognition.git
-   cd speech-emotion-recognition
+📊 The best-performing model was **CNN (81%)**, followed by **XGBoost (79%)**.
