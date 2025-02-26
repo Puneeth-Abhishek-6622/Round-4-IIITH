@@ -14,23 +14,12 @@ We use the **Indian Emotional Speech Corpora (IESC)** dataset, which consists of
 📥 **Dataset Source:** [IESC on Kaggle](https://www.kaggle.com/datasets/ybsingh/indian-emotional-speech-corpora-iesc/data)  
 
 ## 🚀 Features Extracted  
-- **MFCC (Mel-Frequency Cepstral Coefficients)**: Extracts 13 MFCC features per audio sample.  
-- **Mean Aggregation**: Averaging over time to get a fixed-length feature vector.  
+- **MFCC (Mel-Frequency Cepstral Coefficients)**: Extracts 40 MFCC features per audio sample.  
+- **Mel Spectrograms: A time-frequency representation of the audio signals. We extracted 128 mel spectrogram features per audio file to capture energy distribution over different frequency bands.
+- **ZCR (Zero Crossing Rate): Measures the rate at which the signal changes its sign, useful for detecting voiced versus unvoiced segments.
+- **RMSE (Root Mean Square Energy): Represents the overall energy of the audio signal, helping in emotion detection by analyzing loudness variations
 
-## 📊 Models Used  
-We implemented and compared multiple models:  
-1. **Convolutional Neural Network (CNN)** 🧠  
-2. **Long Short-Term Memory (LSTM)** 🔄  
-3. **Support Vector Machine (SVM)** 🔍  
-4. **XGBoost Classifier** 🚀  
 
-## 🏆 Model Performance  
-| Model  | Accuracy (%) |  
-|--------|-------------|  
-| **CNN**  | **81%**  |  
-| **LSTM**  | **61%**  |  
-| **SVM**  | **70%**  |  
-| **XGBoost**  | **79%**  |  
 
 📊 The best-performing model was **CNN (81%)**, followed by **XGBoost (79%)**.  
 
