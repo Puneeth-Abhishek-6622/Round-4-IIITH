@@ -1,8 +1,5 @@
 # 🎭 Speech Emotion Recognition using Indian Emotional Speech Corpora (IESC)  
 
-## 📌 Overview  
-This project is a **Speech Emotion Recognition (SER) system** that classifies emotions from speech audio using **MFCC features** and multiple machine learning models, including **CNN, LSTM, SVM, and XGBoost**. The goal is to analyze and compare different models for accuracy and effectiveness in detecting emotions from Indian speech data.  
-
 ## 📂 Dataset  
 We use the **Indian Emotional Speech Corpora (IESC)** dataset, which consists of **600 audio files** recorded by **8 North Indian speakers** across **five emotions**:  
 - 😠 **Anger**  
@@ -13,12 +10,23 @@ We use the **Indian Emotional Speech Corpora (IESC)** dataset, which consists of
 
 📥 **Dataset Source:** [IESC on Kaggle](https://www.kaggle.com/datasets/ybsingh/indian-emotional-speech-corpora-iesc/data)  
 
-## 🚀 Features Extracted  
-- MFCC (Mel-Frequency Cepstral Coefficients)**: Extracts 40 MFCC features per audio sample.  
-- Mel Spectrograms: A time-frequency representation of the audio signals. We extracted 128 mel spectrogram features per audio file to capture energy distribution over different frequency bands.
-- ZCR (Zero Crossing Rate): Measures the rate at which the signal changes its sign, useful for detecting voiced versus unvoiced segments.
-- RMSE (Root Mean Square Energy): Represents the overall energy of the audio signal, helping in emotion detection by analyzing loudness variations
+# Speech Emotion Recognition (SER) using Deep Learning
+
+## 📌 Overview
+This project implements a **Speech Emotion Recognition (SER) system** using deep learning techniques. The goal is to classify emotions from speech audio using various neural network architectures.
 
 
+## 🎯 Features
+- **Speech Emotion Classification** using LSTM, GRU, and BiLSTM.
+- **Feature Engineering:** Extracts MFCC, Mel spectrogram,Chroma ,  ZCR, and RMSE.
+- **Data Augmentation:** Enhances dataset diversity.
+- **Cross-Lingual Analysis:** Tests model generalization on Urdu speech.
+- **Performance Metrics:** Accuracy, Confusion Matrix, Classification Report.
 
-📊 The best-performing model was **CNN (81%)**, followed by **XGBoost (79%)**.
+## 📊 Model Performance
+| Model   | Accuracy |
+|---------|---------|
+| CNN    | 81%  |
+| LSTM    | 81.25%  |
+| GRU     | 85.00%  |
+| BiLSTM  | 88.75%  |
